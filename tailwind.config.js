@@ -12,6 +12,7 @@ module.exports = {
         animfadeBelow: "fadeBelow 700ms ease-in-out",
         animfadeLeftSide: "fadeLeftSide 700ms ease-in-out",
         animfadeRightSide: "fadeRightSide 700ms ease-in-out",
+        wiggle: "wiggle 1s ease-in-out infinite",
       },
       keyframes: {
         fadeAbove: {
@@ -42,6 +43,10 @@ module.exports = {
             opacity: "0",
           },
         },
+        wiggle: {
+          "0%, 100%": { transform: "rotate(-3deg)" },
+          "50%": { transform: "rotate(3deg)" },
+        },
       },
       boxShadow: {
         leftButtonShadow: "-5px 5px 0px 0px",
@@ -49,10 +54,19 @@ module.exports = {
         leftLetterShadow: "-8px 8px 0px 0px",
         rightLetterShadow: "8px 8px 0px 0px",
       },
+      height: {
+        projectBoxHeight: "250px",
+      },
       colors: {
         primary: "#2B2B2B",
         secondary: "#FFFFFF",
         accent: "#364261",
+      },
+      margin: {
+        navHeight: "44px",
+      },
+      gridTemplateColumns: {
+        myGridTemplate: "repeat(auto-fit, minmax(250px, 1fr))",
       },
     },
   },

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Switch from "react-switch";
 import { useTheme } from "next-themes";
 import Image from "next/image";
+import { FaCode, FaInfoCircle, FaFileAlt } from "react-icons/fa";
 
 const ThemeSwitcher = () => {
   const [mounted, setMounted] = useState(false);
@@ -29,12 +30,19 @@ const ThemeSwitcher = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  if (!mounted) {
-    return null;
-  }
-
   return (
-    <div className="flex justify-end px-4 py-2 fixed right-0">
+    <div className="flex justify-between px-4 py-2 sticky items-center top-0 z-10 bg-white dark:bg-primary animate-animfadeBelow">
+      <div className="flex gap-2 text-primary dark:text-secondary">
+        <a href="#projects">
+          <FaCode />
+        </a>
+        <a href="#about">
+          <FaInfoCircle />
+        </a>
+        <a href="/resume.pdf" download={"marcel-magbual-resume"}>
+          <FaFileAlt />
+        </a>
+      </div>
       <Switch
         checked={isChecked}
         onChange={() => {

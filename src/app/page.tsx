@@ -1,7 +1,13 @@
-import Image from "next/image";
+import { AboutSection } from "@/components/about/about";
+import { IntroSection } from "@/components/intro/IntroSection";
+import { ProjectSection } from "@/components/projects/ProjectSection";
 
 export default function Home() {
   return (
-    <div className="text-orange-500 sm:text-red-900 md:text-slate-500"></div>
+    <>
+      <IntroSection />
+      <AboutSection />
+      <ProjectSection />
+    </>
   );
 }
