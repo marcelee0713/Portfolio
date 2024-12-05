@@ -21,8 +21,8 @@ export const ProjectBox = ({
 
       <div className="flex items-center w-full gap-2 justify-between">
         <div className="flex gap-2 items-center">
-          {toolsUsed.map((val) => (
-            <Image src={val} alt="icon-svg" width={25} height={25} />
+          {toolsUsed.map((val, i) => (
+            <Image src={val} alt="icon-svg" width={25} height={25} key={i} />
           ))}
         </div>
         <div className="flex gap-2 items-center">
