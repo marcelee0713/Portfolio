@@ -39,7 +39,7 @@ const ThemeSwitcher = () => {
         <a href="#about">
           <FaInfoCircle />
         </a>
-        <a href="/resume.pdf" download={"marcel-magbual-resume"}>
+        <a href="/MAGBUAL-MARCEL-RESUME.pdf" download={"magbual-marcel-resume"}>
           <FaFileAlt />
         </a>
       </div>

@@ -37,7 +37,7 @@ export const IntroSection = () => {
             I&lsquo;m Marcel Paolo De Castro Magbual
           </div>
           <div className="font-light text-sm lg:text-lg">
-            an aspiring Full-Stack Developer!
+            a senior BSIT Student at PHINMA University of Pangasinan
           </div>
         </div>
         <div className="flex gap-5">

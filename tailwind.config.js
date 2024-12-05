@@ -58,7 +58,7 @@ module.exports = {
         projectBoxHeight: "250px",
       },
       colors: {
-        primary: "#2B2B2B",
+        primary: "#2E3437",
         secondary: "#FFFFFF",
         accent: "#364261",
       },
