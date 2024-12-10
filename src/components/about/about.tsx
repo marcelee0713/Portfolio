@@ -18,11 +18,6 @@ export const AboutSection = () => {
           coding problems during my free time.
         </p>
 
-        <p>
-          I am currently finding an internship where I could expand my skills
-          and gain experience on how the real world works!
-        </p>
-
         <p>If you ever want to contact me magbualmarcel@gmail.com</p>
       </div>
     </div>
